@@ -1,0 +1,6 @@
+<div class="container">
+    <button [disabled]="isPlaying" (click)="start()">Start</button>
+    <button [disabled]="!isPlaying" (click)="stop()">Stop</button>
+    <button (click)="reset()">Reset</button>
+</div>
+<p>Counter {{this.getcounter()}}</p>

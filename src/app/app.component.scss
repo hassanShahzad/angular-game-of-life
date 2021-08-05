@@ -1,0 +1,19 @@
+header {
+  background-color: black;
+  padding-top: 0.67em;
+  padding-bottom: 0.67em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  color: #fff;
+  margin: 0 auto;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}

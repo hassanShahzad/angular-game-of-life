@@ -1,0 +1,4 @@
+<div class="row" *ngFor="let row of grid">
+    <div class="cell" [class.active]="cell.isActive()" *ngFor="let cell of row" (click)="changeState(cell)">
+    </div>
+</div>

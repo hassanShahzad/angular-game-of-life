@@ -1,0 +1,24 @@
+:host {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+button {
+  border: 0;
+  background-color: black;
+  color: #fff;
+  padding: 0.4em;
+  margin: 0 0.4em;
+  width: 100px;
+}
+
+button[disabled] {
+  background-color: #d0e7ff;
+  color: #a2d0ff;
+}

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { GameService } from './services/game.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-game-of-life';
+  title = 'Game-of-life';
+  rows = 25;
+  columns = 50;
+
+  constructor(private gameService: GameService) {}
+
+  ngOnInit() : void {
+    this.gameService.initialize(this.rows, this.columns);
+  }
 }
